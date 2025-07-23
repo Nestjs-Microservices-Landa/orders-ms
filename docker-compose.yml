@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  orders-db:
+    image: postgres:16.2
+    container_name: orders-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: orders_db
+    ports:
+      - 5432:5432
